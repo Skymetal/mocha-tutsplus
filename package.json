@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --require coffee-script/register --compilers coffee:coffee-script/register"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "coffee-script": "^1.9.2",
     "express": "^4.12.4",
-    "jade": "^1.9.2"
+    "jade": "^1.9.2",
+    "mocha": "^2.2.5"
   }
 }
