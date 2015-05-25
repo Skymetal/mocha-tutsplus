@@ -2,11 +2,19 @@
   "name": "mocha-tutsplus",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --require coffee-script/register --compilers coffee:coffee-script/register -R nyan"
+    "test": "./node_modules/.bin/mocha --require coffee-script/register --compilers coffee:coffee-script/register --bail",
+    "nyan": "./node_modules/.bin/mocha --require coffee-script/register --compilers coffee:coffee-script/register --bail -R nyan"
   },
-  "author": "",
+  "contributors": [
+    "Ben Murphy <murphyben2@gmail.com>",
+    "David Higgins <thehig@gmail.com>"
+  ],
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/Skymetal/mocha-tutsplus.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "chai": "^2.3.0",
